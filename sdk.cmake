@@ -1,7 +1,5 @@
-#workaround...
-if(NOT $ENV{OBJECT_ARX_SDK})
-	set(ENV{OBJECT_ARX_SDK} "X:/system_windows/etc/autodesk_obj_arx/arx25")
-endif
+#temporary ...
+set(ENV{OBJECT_ARX_SDK} "X:/system_windows/etc/autodesk_obj_arx/arx25")
 
 add_library(object_arx INTERFACE EXCLUDE_FROM_ALL)
 target_include_directories(object_arx INTERFACE
